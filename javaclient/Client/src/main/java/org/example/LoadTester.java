@@ -14,8 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class LoadTester {
-    // НАЛАШТУВАННЯ
-    private static final String SERVER_IP = "10.146.160.147"; // Твій IP
+    private static final String SERVER_IP = "localhost";
     private static final int SERVER_PORT = 9999;
 
     private static final String[] DICTIONARY = {
@@ -42,8 +41,8 @@ public class LoadTester {
         // Сценарії
         scenarios.add(new TestScenario(10, 10));    // Розминка
         scenarios.add(new TestScenario(50, 10));   // Середній
-        scenarios.add(new TestScenario(1000, 2));  // Високий
-        scenarios.add(new TestScenario(4000, 2));  // Стрес
+        scenarios.add(new TestScenario(1000, 3));  // Високий
+        scenarios.add(new TestScenario(4000, 3));  // Стрес
 
         System.out.println("==========================================");
         System.out.println("AUTOMATED LOAD TESTING (with Latency)");

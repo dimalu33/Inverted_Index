@@ -18,7 +18,7 @@ public class SearchServer {
     private static final InvertedIndex globalIndex = new InvertedIndex();
 
     private static final CustomThreadPool indexingPool = new CustomThreadPool(Runtime.getRuntime().availableProcessors());
-
+    //private static final CustomThreadPool indexingPool = new CustomThreadPool(100);
     public static void main(String[] args) {
         log("System starting...");
 

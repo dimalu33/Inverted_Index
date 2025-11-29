@@ -3,7 +3,7 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 
-#define SERVER_IP "10.146.160.147"
+#define SERVER_IP "127.0.0.1"
 #define PORT 9999
 
 int main() {
